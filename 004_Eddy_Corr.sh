@@ -34,13 +34,12 @@ for i in {1..100}; do echo "1" >> $analysis_dir/$subject/DTI/Eddy/index.txt; don
 
 # Run eddy current correction
 cd $analysis_dir/$subject/DTI/Eddy
-eddy --imain=AP_Corr.nii.gz\
+eddy_cuda10.2 --imain=AP_Corr.nii.gz\
 	 --mask=AP_brain_mask.nii.gz\
 	 --index=index.txt\
 	 --acqp=acq_params.txt\
 	 --bvecs=AP.bvec\
 	 --bvals=AP.bval\
-	 --fwhm=0\
 	 --topup=AP_PA_Topup\
 	 --flm=quadratic\
 	 --out=AP_eddy_unwarped\

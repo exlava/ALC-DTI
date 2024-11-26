@@ -23,35 +23,35 @@ source $script_dir/Helpers.sh
 # 1)Copy Data to Analysis folders #
 ###################################
 
-#source $script_dir/001_Copy_Data.sh
+source $script_dir/001_Copy_Data.sh
 
 
 ##############################################
 # 2)Fix Phase Direction problem in DTI scans #
 ##############################################
 
-#source $script_dir/002_Fix_Phase_Dir.sh
+source $script_dir/002_Fix_Phase_Dir.sh
 
 
 ##########################################################################
 # 3)TopUp - Correct distortions caused by magnetic field inhomogeneities #
 ##########################################################################
 
-#source $script_dir/003_Topup.sh
+source $script_dir/003_Topup.sh
 
 
 #############################
 # 4)Eddy current correction #
 #############################
 
-#source $script_dir/004_Eddy_Corr.sh
+source $script_dir/004_Eddy_Corr.sh
 
 
 #####################
 # 5)Fit tensor data #
 #####################
 
-#source $script_dir/005_Dtifit.sh
+source $script_dir/005_Dtifit.sh
 
 
 ######################
@@ -59,3 +59,15 @@ source $script_dir/Helpers.sh
 ######################
 
 source $script_dir/006_Tbss.sh
+
+# Run the stats for TBSS
+# Create design.con & design.mat in the Results/TBSS/stats folder manually
+#cd $result_dir/TBSS/stats
+#randomise -i all_FA_skeletonised.nii.gz -o tbss -m mean_FA_skeleton_mask.nii.gz -d design.mat -t design.con -n 500 --T2 -V
+
+
+###############
+# 7) BedpostX #
+###############
+
+#source $script_dir/007_Bedpostx.sh
