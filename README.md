@@ -1,3 +1,4 @@
+![Alt text](https://computing.unl.edu/sd/images/logo/2022-23/UNMC-GCHS/UNMCLogo.png)
 
 # **Blackford Lab - MMI/UNMC**
 # **Alcohol Study DTI MRI Analysis Script**
