@@ -70,4 +70,19 @@ source $script_dir/006_Tbss.sh
 # 7) BedpostX #
 ###############
 
-#source $script_dir/007_Bedpostx.sh
+source $script_dir/007_Bedpostx.sh
+
+
+#####################################
+# 8) Template <--> DTI registration #
+#####################################
+
+source $script_dir/008_Reg_MNI2DTI.sh
+
+
+#################################
+# 9) Probabilistic Tractography #
+#################################
+
+source $script_dir/009_Probtrackx.sh
+
