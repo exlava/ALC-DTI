@@ -35,7 +35,7 @@ cd $reg_folder
 
 # Register MNI152 to subject nodif_brain
 nodif_brain=$analysis_dir/$subject/DTI/Eddy/AP_brain.nii.gz
-template=$script_dir/MNI152_T1_1mm_brain.nii.gz
+template=$script_dir/Templates/MNI152_T1_1mm_brain.nii.gz
 
 
 
